@@ -87,7 +87,6 @@ The dashboard includes:
 
 ## Project Structure
 
-```text
 PowerBI-Sales-Analytics-Dashboard/
 │
 ├── README.md
@@ -97,8 +96,9 @@ PowerBI-Sales-Analytics-Dashboard/
     ├── executive-dashboard.png
     ├── sales-performance.png
     ├── customer-analysis.png
-    ├── product-details.png
+    ├── product-detail.png
     └── sales-overview.png
+
 
 ## Dashboard Preview
 
