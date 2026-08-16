@@ -121,7 +121,6 @@ PowerBI-Sales-Analytics-Dashboard/
 ![Sales Overview](sales-overview.png)
 ```
 
----
 
 ## Project Status
 
