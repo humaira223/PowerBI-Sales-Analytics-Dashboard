@@ -85,42 +85,40 @@ The dashboard includes:
 
 ---
 
-## Project Structure
-
+```text
 PowerBI-Sales-Analytics-Dashboard/
 │
 ├── README.md
-├── Sales_Dashboard.pbix
+├── Sales Dashboard.pbix
 │
-└── screenshots/
-    ├── executive-dashboard.png
-    ├── sales-performance.png
-    ├── customer-analysis.png
-    ├── product-details.png
-    └── sales-overview.png
-
+├── customer-analysis.png
+├── executive-dashboard.png
+├── product-details.png
+├── sales-overview.png
+└── sales-performance.png
+```
 
 ## Dashboard Preview
 
 ### Executive Dashboard
 
-![Executive Dashboard](screenshots/executive-dashboard.png)
+![Executive Dashboard](executive-dashboard.png)
 
 ### Sales Performance
 
-![Sales Performance](screenshots/sales-performance.png)
+![Sales Performance](sales-performance.png)
 
 ### Customer Analysis
 
-![Customer Analysis](screenshots/customer-analysis.png)
+![Customer Analysis](customer-analysis.png)
 
 ### Product Details
 
-![Product Details](screenshots/product-details.png)
+![Product Details](product-details.png)
 
 ### Sales Overview
 
-![Sales Overview](screenshots/sales-overview.png)
+![Sales Overview](sales-overview.png)
 ```
 
 ---
