@@ -1,272 +1,76 @@
-Interactive Power BI sales analytics dashboard with star-schema data modeling, DAX measures, time intelligence, drillthrough and interactive reporting.
-# Sales Performance & Executive Dashboard — Power BI
+# Sales Analytics Dashboard — Power BI
 
 ## Project Overview
 
-This project is an interactive Power BI sales analytics dashboard created as part of a data analytics / business intelligence project.
+An interactive Power BI Sales Analytics Dashboard built to analyze sales performance across customers, products, geography, and time.
 
-The objective is to transform raw sales data into a structured analytical model and an interactive multi-page dashboard that helps users explore sales performance across time, customers, products, geography, and other available business dimensions.
-
-> **Project status:** Dashboard and core data-model/DAX work completed up to the current stage. Advanced analysis and final documentation requirements will be completed in the next phase.
-
----
-
-## Business Objective
-
-The dashboard is designed to help stakeholders:
-
-- Monitor overall sales performance.
-- Analyze sales trends over time.
-- Compare customer and product performance.
-- Explore geographic sales performance.
-- Identify high-performing products and customers.
-- Analyze sales using interactive filters and drillthrough.
-- Compare current sales with previous periods using time-intelligence measures.
-
----
-
-## Dataset
-
-The project uses a sales dataset containing order, customer, product, date, geography, and sales information.
-
-The available dataset was used as provided. No unsupported values were fabricated.
-
-Some assignment requirements refer to fields such as **Profit, Discount, and Quantity**. These fields are not available in the actual source dataset used for this project, so those analyses have not been fabricated and will be treated as dataset limitations in the final documentation.
-
----
-
-## Data Model
-
-A star-schema approach was implemented.
-
-### Fact Table
-
-**Fact_Orders**
-
-Contains transactional/order-level information used for sales analysis.
-
-### Dimension Tables
-
-- **Dim_Date**
-- **Dim_Customer**
-- **Dim_Product**
-- **Dim_Geography**
-
-The model uses dimension-to-fact relationships, with the fact table containing the corresponding foreign keys.
-
-Foreign-key fields that are primarily required for relationships were hidden from the report field list where appropriate.
+The project focuses on transforming raw sales data into a structured data model and presenting the results through an interactive multi-page Power BI report.
 
 ---
 
 ## Dashboard Pages
 
-The current report contains five dashboard pages.
-
 ### 1. Executive Dashboard
-
-Provides a high-level overview of the business and acts as the main entry point to the report.
-
-Includes:
-
-- KPI cards
-- Year slicer
-- Reset Filters button
-- Page navigation
-- Sales visualizations
-- Interactive filtering
-
-The Year slicer is connected to the relevant report pages so that selecting a year updates the related visuals.
-
----
+Provides a high-level overview of sales performance with KPI cards, sales visuals, year filtering, reset filters, and navigation.
 
 ### 2. Sales Performance
-
-Focuses on sales performance and trends.
-
-Includes:
-
-- Clustered column charts
-- Clustered bar charts
-- Matrix
-- Stacked column chart
-- Line chart
-- Bar/Line view bookmark functionality
-
-The page supports comparison of sales performance across relevant business dimensions and time.
-
----
+Analyzes sales performance using multiple charts, a matrix, and interactive Bar/Line view bookmarks.
 
 ### 3. Customer Analysis
-
-Focuses on customer-related sales analysis.
-
-Includes:
-
-- Customer-focused charts
-- KPI cards
-- Interactive filtering
-
----
+Provides customer-focused sales analysis using charts and KPI cards.
 
 ### 4. Product Detail
-
-Provides detailed product-level analysis.
-
-Includes:
-
-- KPI cards
-- Line chart
-- Product detail analysis
-- Drillthrough functionality
-- Back button
-
-The Product Detail page can be reached through drillthrough from relevant product analysis visuals.
-
-The Back button returns the user to the page from which the drillthrough was initiated.
-
----
+Provides product-level analysis with KPI cards, a line chart, and drillthrough functionality.
 
 ### 5. Profitability & Discounts
-
-Contains the final analytical dashboard page with:
-
-- Three KPI cards
-- Clustered bar charts
-- Matrix
-
-The page name is retained from the assignment structure. However, profitability/discount-specific calculations that require unavailable source columns have not been fabricated.
+Provides additional sales analysis through KPI cards, clustered bar charts, and a matrix.
 
 ---
 
-## DAX Measures Implemented So Far
+## Data Model
 
-The following core measures have been implemented and tested:
+The report uses a star-schema structure with:
 
-### Total Sales
+- Fact_Orders
+- Dim_Date
+- Dim_Customer
+- Dim_Product
+- Dim_Geography
 
-Calculates total sales.
+Relationships were created between the fact table and the relevant dimension tables.
 
-### Total Orders
+---
 
-Calculates total order count.
+## DAX Measures
 
-### Average Order Value
+The dashboard currently includes the following measures:
 
-Calculates the average sales value per order.
-
-### Sales LY
-
-Calculates sales for the previous-year period.
-
-### Sales YTD
-
-Calculates year-to-date sales.
-
-### Sales MTD
-
-Calculates month-to-date sales.
-
-### Sales YoY%
-
-Calculates year-over-year sales growth.
-
-### Sales MoM%
-
-Calculates month-over-month sales growth.
-
-### Sales Running Total
-
-Calculates cumulative sales over the selected date context.
-
-### Sales Rank by Product
-
-Ranks products according to their sales performance.
-
-### % of Total Sales
-
-Calculates a product's contribution to the selected total sales context.
-
-All implemented measures were tested within the Power BI report, including filter responsiveness for the time-intelligence measures.
+- Total Sales
+- Total Orders
+- Average Order Value
+- Sales LY
+- Sales YTD
+- Sales MTD
+- Sales YoY%
+- Sales MoM%
+- Sales Running Total
+- Sales Rank by Product
+- % of Total Sales
 
 ---
 
 ## Interactivity
 
-The report currently includes:
+The dashboard includes:
 
 - Year slicer
-- Slicer filtering across relevant report pages
-- Reset Filters functionality
+- Reset Filters button
 - Page navigation
 - Drillthrough
-- Dynamic Back button
+- Back button
 - Bookmark-based Bar/Line view
-- Cross-filtering between visuals
+- Cross-filtering
 - Conditional formatting
-- Interactive KPI cards and charts
-
----
-
-## Data Quality & Modeling Work
-
-During development, the following data/modeling tasks were performed:
-
-- Raw data was cleaned and structured.
-- Dimension tables were created.
-- Duplicate dimension records were addressed.
-- Relationships were established between fact and dimension tables.
-- Date modeling was implemented.
-- Foreign-key fields were hidden where appropriate.
-- Visuals were connected to the analytical model.
-- Time-intelligence measures were tested against year filters.
-
----
-
-## Design & Formatting
-
-The dashboard was formatted consistently across the five pages.
-
-Work included:
-
-- Theme colors
-- Canvas sizing
-- KPI card formatting
-- Chart formatting
-- Matrix formatting
-- Conditional formatting
-- Headers
-- Navigation elements
-- Button formatting
-- Alignment and spacing
-- Readability improvements
-
----
-
-## Current Project Status
-
-### Completed
-
-- Data preparation
-- Star-schema data model
-- Relationships
-- Core DAX measures
-- Time-intelligence measures
-- Five dashboard pages
-- Dashboard formatting
-- Interactive slicers
-- Reset Filters
-- Navigation
-- Drillthrough
-- Back navigation
-- Bookmark interaction
-- Conditional formatting
-- Initial validation/testing
-
-### Planned Next Phase
-
-The remaining assignment work will be completed after this project snapshot, including applicable advanced analysis, custom tooltip functionality, final validation, business insights, documentation, and portfolio/publishing tasks.
-
-Requirements that depend on unavailable dataset fields will be explicitly documented as **not applicable due to source-data limitations** rather than being fabricated.
 
 ---
 
@@ -277,36 +81,28 @@ Requirements that depend on unavailable dataset fields will be explicitly docume
 - DAX
 - Data Modeling
 - Star Schema
-- Interactive Data Visualization
+- Data Visualization
 
 ---
 
-## Project Files
-
-The repository is intended to contain:
+## Project Structure
 
 ```text
-Sales-PowerBI-Dashboard/
+PowerBI-Sales-Analytics-Dashboard/
 │
 ├── README.md
 ├── Sales_Dashboard.pbix
+│
 └── screenshots/
+    ├── executive-dashboard.png
+    ├── sales-performance.png
+    ├── customer-analysis.png
+    ├── product-details.png
+    └── sales-overview.png
 ```
-
-Additional documentation and screenshots can be added as the project is finalized.
 
 ---
 
-## Author
+## Project Status
 
-**Data Analytics / Data Science Portfolio Project**
-
-This project demonstrates practical experience with:
-
-- Power BI
-- Data modeling
-- DAX
-- Business intelligence
-- Interactive dashboards
-- Sales analytics
-- Data visualization
+The current version contains the completed dashboard pages, data model, core DAX measures, interactive features, and dashboard formatting completed so far.
