@@ -120,8 +120,3 @@ PowerBI-Sales-Analytics-Dashboard/
 
 ![Sales Overview](sales-overview.png)
 ```
-
-
-## Project Status
-
-The current version contains the completed dashboard pages, data model, core DAX measures, interactive features, and dashboard formatting completed so far.
