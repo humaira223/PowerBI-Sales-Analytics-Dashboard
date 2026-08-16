@@ -119,4 +119,3 @@ PowerBI-Sales-Analytics-Dashboard/
 ### Sales Overview
 
 ![Sales Overview](sales-overview.png)
-```
