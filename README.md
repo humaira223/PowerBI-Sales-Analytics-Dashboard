@@ -22,7 +22,7 @@ Provides customer-focused sales analysis using charts and KPI cards.
 ### 4. Product Detail
 Provides product-level analysis with KPI cards, a line chart, and drillthrough functionality.
 
-### 5. Profitability & Discounts
+### 5. Sales Overview
 Provides additional sales analysis through KPI cards, clustered bar charts, and a matrix.
 
 ---
