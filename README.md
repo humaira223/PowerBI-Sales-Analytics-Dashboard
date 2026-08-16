@@ -99,6 +99,28 @@ PowerBI-Sales-Analytics-Dashboard/
     ├── customer-analysis.png
     ├── product-details.png
     └── sales-overview.png
+
+## Dashboard Preview
+
+### Executive Dashboard
+
+![Executive Dashboard](screenshots/executive-dashboard.png)
+
+### Sales Performance
+
+![Sales Performance](screenshots/sales-performance.png)
+
+### Customer Analysis
+
+![Customer Analysis](screenshots/customer-analysis.png)
+
+### Product Detail
+
+![Product Detail](screenshots/product-detail.png)
+
+### Sales Overview
+
+![Sales Overview](screenshots/sales-overview.png)
 ```
 
 ---
